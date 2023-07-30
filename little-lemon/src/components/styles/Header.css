@@ -1,16 +1,57 @@
 header {
-  background-color: olive;
-  padding: 1rem 0;
+  background: linear-gradient(180deg,#495E57 75%, white 25%);
+  padding: 2rem 0;
 }
 
-.grid {
-  display: flex;
+.header-section {
+  margin: 0 20rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
 
-.test-img {
-  width: 12rem;
+.header-title {
+  font-family: 'Markazi Text', serif;
+  font-size: 85px;
+  font-weight: 500;
+  color: #F4CE14;
+}
+
+.header-subtitle {
+  font-family: 'Markazi Text', serif;
+  font-size: 55px;
+  font-weight: 500;
+  color: white;
+  margin-top: -2rem;
 }
 
 .text-box {
-  width: 15rem;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  font-size: 24px; /* lead text */
+  text-align: justify;
+  line-height: 1.5;
+  color: white;
+  margin: 0.5rem 0;
+}
+
+button {
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 16px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.img-div {
+  margin: 0 0;
+  grid-column-start: 3;
+}
+
+.img-div img {
+  object-fit: scale-down;
+  width: 20rem;
+  border-radius: 16px;
 }

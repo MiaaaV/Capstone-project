@@ -3,13 +3,13 @@
 FONTS & TYPOGRAPHY
 
 font-family: 'Markazi Text', serif;
-- display title med 85px
-- su title close to display
+- display title med(500) 85px
+- sub title close to display
 - regular 53px
 
 
 font-family: 'Karla', sans-serif;
-- lead text medium 24px (home page, CTA)
+- lead text medium(500) 24px (home page, CTA)
 - SECTION TITLE UPPER 26px EXTRA BOLD
 - section categories 22px extra bold
 - card title 24px bold
