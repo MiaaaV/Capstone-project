@@ -1,0 +1,26 @@
+main {
+  padding: 1rem 0;
+  background-color: rebeccapurple;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.special-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: brown;
+}
+
+.card-img {
+  max-width: 15rem;
+}
+
+.card-text {
+  width: 15rem;
+}

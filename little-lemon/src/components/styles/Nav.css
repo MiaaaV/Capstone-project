@@ -1,26 +1,26 @@
 nav {
-  background-color: gray;
+  margin: 0 15rem;
   padding: 1rem 0;
-}
-
-.navbar {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  gap: 5rem;
 }
 
 .nav-logo {
+  display: flex;
   height: 3rem;
 }
 
-.nav-items {
-  background-color: darkgray;
+ul {
   display: flex;
   list-style: none;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.nav-item {
-  background-color: darkolivegreen;
+ul li,
+a {
+  font-family: karla;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }

@@ -1,0 +1,16 @@
+header {
+  background-color: olive;
+  padding: 1rem 0;
+}
+
+.grid {
+  display: flex;
+}
+
+.test-img {
+  width: 12rem;
+}
+
+.text-box {
+  width: 15rem;
+}
