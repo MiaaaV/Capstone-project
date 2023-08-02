@@ -1,18 +1,15 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "./routes/Home";
+import Reservations from './routes/Reservations';
 import './App.css';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Specials from './components/Specials';
-import Testimonials from './components/Testimonials';
-import Footer from './components/Footer';
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Specials />
-      <Testimonials />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/reservations" element={<Reservations />} />
+      </Routes>
     </>
   )
 }
