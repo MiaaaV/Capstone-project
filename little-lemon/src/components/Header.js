@@ -1,4 +1,6 @@
-import './styles/Header.css';
+import './styles/Header.css'
+import { NavLink } from 'react-router-dom'
+import Logo from "../images/colour_logo.png";
 
 function Header() {
 
@@ -6,21 +8,20 @@ function Header() {
     <>
       <header>
 
-        <div className="header-section">
-          <div>
-            <h1 className="header-title">Little Lemon</h1>
-            <h2 className="header-subtitle">Chicago</h2>
+        <NavLink to="/">
+          <img src={Logo} alt="Little Lemon logo" className="nav-logo" />
+        </NavLink>
 
-            <div className="text-box">
-              <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-              <button>Reserve a Table</button>
-            </div>
-          </div>
-
-          <div className="img-div">
-            <img src={require("../images/restauranfood.jpg")} alt="A waiter holding food" />
-          </div>
-        </div>
+        <nav>
+          <ul>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="#">About</NavLink></li>
+            <li><NavLink to="#">Menu</NavLink></li>
+            <li><NavLink to="/">Reservations</NavLink></li>
+            <li><NavLink to="#">Order Online</NavLink></li>
+            <li><NavLink to="#">Login</NavLink></li>
+          </ul>
+        </nav>
 
       </header>
     </>
