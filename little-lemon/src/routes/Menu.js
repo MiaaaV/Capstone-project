@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 function Menu() {
@@ -5,6 +6,7 @@ function Menu() {
     <>
       <Header />
       <h1>Menu</h1>
+      <Footer />
     </>
   )
 }

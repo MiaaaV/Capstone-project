@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 function Login() {
@@ -5,6 +6,7 @@ function Login() {
     <>
       <Header />
       <h1>Login</h1>
+      <Footer />
     </>
   )
 }

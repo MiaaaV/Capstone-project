@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 function OrderOnline() {
@@ -5,6 +6,7 @@ function OrderOnline() {
     <>
       <Header />
       <h1>Order Online</h1>
+      <Footer />
     </>
   )
 }

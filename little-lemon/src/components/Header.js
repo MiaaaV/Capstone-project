@@ -16,10 +16,10 @@ function Header() {
           <ul>
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="#">Menu</NavLink></li>
+            <li><NavLink to="/menu">Menu</NavLink></li>
             <li><NavLink to="/reservations">Reservations</NavLink></li>
-            <li><NavLink to="#">Order Online</NavLink></li>
-            <li><NavLink to="#">Login</NavLink></li>
+            <li><NavLink to="/orderonline">Order Online</NavLink></li>
+            <li><NavLink to="/login">Login</NavLink></li>
           </ul>
         </nav>
 
@@ -28,4 +28,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;
