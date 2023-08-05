@@ -1,26 +1,86 @@
-main {
-  padding: 1rem 0;
-  background-color: rebeccapurple;
+.special-section {
+  display: block;
+  margin: 1rem  0;
 }
 
-.container {
+.special-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.special-container h1{
+  font-family: 'Markazi Text', serif;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.special-container button {
+  display: none;
 }
 
 .special-grid {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1,2fr);
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .card {
-  background-color: brown;
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 16px 0 0 16px;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+  justify-items: center;
+  position: relative;
 }
 
 .card-img {
-  max-width: 15rem;
+  max-width: 100%;
 }
 
-.card-text {
-  width: 15rem;
+.card-info {
+  padding: 0.5rem 0;
+  background-color: rgb(247, 247, 247);
+}
+
+.card-header {
+  margin-left: 0.5rem;
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.card-header span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #EE9972;
+}
+
+.card-text{
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0.5rem;
+
+  overflow:hidden;
+  line-height: 1.5rem;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.card-btn {
+  margin-left: 0.5rem;
+  text-align: center;
+  color: black;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
 }
