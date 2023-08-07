@@ -23,7 +23,7 @@
   }
 
   .hero-left-box p {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .img-div {
@@ -36,12 +36,12 @@
   }
 
   button {
-    font-size: 16px;
+    font-size: 18px;
     padding: 0.8rem 1.8rem;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and ((min-width: 1440px) and (max-width: 2560px)) {
 
   .hero-container {
     width: 60%;

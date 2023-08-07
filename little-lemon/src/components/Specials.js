@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPersonBiking } from "@fortawesome/free-solid-svg-icons";
 import './styles/Specials.css';
+import './styles/media-queries/SpecialsQuery.css';
 
 function Main() {
 
@@ -38,7 +39,7 @@ function Main() {
                   <h4>Bruschetta</h4>
                   <h4><span>$ 5.99</span></h4>
                 </div>
-                <p className="card-text">Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
+                <p className="card-text">Our delicious Bruschetta is made from grilled local bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
                 <a href="http://localhost:3000/" className="card-btn">Add to order <span><FontAwesomeIcon icon={faPersonBiking} /></span></a>
               </div>
             </div>
