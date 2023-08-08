@@ -10,6 +10,7 @@
 
   .special-container button {
     display: block;
+    padding: 0.8rem 1.8rem;
   }
 
   .special-grid {
@@ -19,7 +20,7 @@
 
   .card-header h4,
   .card-header span {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .card-text {
@@ -28,7 +29,7 @@
   }
 
   .card-btn {
-    font-size: 22px;
+    font-size: 20px;
   }
 
 }
@@ -38,11 +39,9 @@
   .special-section {
     width: 60%;
     margin-top: 2rem;
-    margin-bottom: 50rem;
   }
 
   .special-container {
-    width: 85%;
     justify-content: space-between;
     margin: 0;
   }
@@ -53,21 +52,21 @@
   }
 
   .special-container button {
-    font-size: 16px;
-    padding: 0.8rem 1.8rem;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1rem 2rem;
     margin: 0;
   }
 
   .special-grid {
-    width: 85%;
-    height: 100%;
-    grid-template-columns: repeat(3,1fr);
-    gap: 0;
-    margin: 2rem 0;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    margin: 4rem auto;
   }
 
   .card {
-    width: 90%;
+    width: 100%;
     border-radius: 16px 16px 0 0;
   }
 
@@ -94,7 +93,8 @@
   }
 
   .card-text{
-    font-size: 22px;
+    font-size: 18px;
+    line-height: 1.5;
     margin: 0;
     -webkit-line-clamp:7;
   }

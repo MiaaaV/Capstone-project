@@ -51,10 +51,25 @@ function Main() {
 
               <div className='card-info'>
                 <div className='card-header'>
-                  <h4>Lemon Dessert</h4>
+                  <h4>Lemon Cake</h4>
                   <h4><span>$ 5.00</span></h4>
                 </div>
                 <p className="card-text">This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p>
+                <a href="http://localhost:3000/" className="card-btn">Add to order <span><FontAwesomeIcon icon={faPersonBiking} /></span></a>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-body">
+              <img src={require("../images/foods/penne pasta.jpg")} alt="Penne pasta" className="card-img" />
+
+              <div className='card-info'>
+                <div className='card-header'>
+                  <h4>Penne pasta</h4>
+                  <h4><span>$ 14.99</span></h4>
+                </div>
+                <p className="card-text">Mediterranean style prepared penne pasta is our all time favourite for both the young and old. Coated in plenty mozzarella and Parmesan cheese.</p>
                 <a href="http://localhost:3000/" className="card-btn">Add to order <span><FontAwesomeIcon icon={faPersonBiking} /></span></a>
               </div>
             </div>

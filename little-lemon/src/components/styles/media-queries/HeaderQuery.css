@@ -41,7 +41,11 @@
   }
 
   nav {
-    margin: 0 auto;
+    margin: 0;
+  }
+
+  ul {
+    gap: 3rem;
   }
 
   li a:link,
