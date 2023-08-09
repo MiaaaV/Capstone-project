@@ -1,0 +1,60 @@
+footer {
+  background-color: #495E57;
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.logo-col {
+  max-width: 90%;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-col {
+  text-align: start;
+}
+
+.footer-col:nth-of-type(2){
+  width: 90%;
+}
+
+.footer-col h2 {
+  font-family: 'Markazi Text', serif;
+  color: #F4CE14;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#footer-logo {
+  max-width: 50%;
+  filter: brightness(60%)
+}
+
+.footer-ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.footer-ul a,
+.footer-ul li {
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+li > span {
+  text-decoration: underline;
+}

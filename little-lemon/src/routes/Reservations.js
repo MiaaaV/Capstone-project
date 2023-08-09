@@ -1,6 +1,6 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import ReservationsPage from "../components/ReservationsPage";
+import Footer from "../components/frontpage/Footer";
+import Header from "../components/frontpage/Header";
+import ReservationsPage from "../components/frontpage/ReservationsPage";
 
 function Reservations() {
 

@@ -1,9 +1,9 @@
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Specials from '../components/Specials';
-import Testimonials from '../components/Testimonials';
-import Info from '../components/Info';
-import Footer from '../components/Footer';
+import Header from '../components/frontpage/Header';
+import Hero from '../components/frontpage/Hero';
+import Specials from '../components/frontpage/Specials';
+import Testimonials from '../components/frontpage/Testimonials';
+import Info from '../components/frontpage/Info';
+import Footer from '../components/frontpage/Footer';
 
 function Home() {
   return (
