@@ -6,6 +6,7 @@ import Reservations from './routes/Reservations';
 import OrderOnline from "./routes/OrderOnline";
 import Login from "./routes/Login";
 import './App.css';
+import Confirmation from "./components/frontpage/Confirmation";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/reservations" element={<Reservations />} />
         <Route path="/orderonline" element={<OrderOnline />} />
         <Route path="/login" element={<Login />} />
+
+        <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
     </>
   )
