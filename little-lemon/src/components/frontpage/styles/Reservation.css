@@ -8,18 +8,34 @@
   align-items: center;
   justify-content: center;
   background-color: #495E57;
+  background-image:url('../../../images/tables.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
   color: white;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   font-family: 'Karla', sans-serif;
 }
 
-.res-content h1{
+.res-container h1{
   font-family: 'Markazi Text', serif;
   font-size: 50px;
   text-align: center;
   color: #F4CE14;
+  background-color: rgba(0, 0, 0, 0.40);
+  border-radius: 16px;
+  padding: 0.5rem;
 }
 
-.res-content p {
-  font-size: 16px;
+@media screen and (min-width: 768px) {
+
+.res-container {
+  padding: 2rem;
+}
+
+.res-container h1 {
+  font-size: 65px;
+  padding: 0.5rem 2rem;
+}
+
 }

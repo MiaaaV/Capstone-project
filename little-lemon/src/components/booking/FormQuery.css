@@ -1,0 +1,126 @@
+@media screen and (min-width: 768px) {
+
+h2 {
+  font-size: 35px;
+}
+
+label, select, input {
+  font-size: 20px;
+}
+
+small {
+  margin: 0;
+  font-size: 18px;
+}
+
+fieldset {
+  width: 90%;
+  margin: 0 auto;
+}
+
+fieldset:first-child {
+  gap: 5rem;
+}
+
+.occasion-btn-div {
+  margin: 0;
+  display: flex;
+}
+
+fieldset:nth-child(2) {
+  width: 100%;
+}
+
+fieldset:nth-child(2) h2 {
+  margin-top: 2rem;
+  display: flex;
+  width: 50%;
+}
+
+fieldset:nth-child(2) .field {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact-info {
+  gap: 1rem;
+}
+
+input {
+  width: 75%;
+  margin-left: auto;
+  padding: 0.2rem 0.4rem;
+}
+
+#textarea {
+  margin: 0;
+}
+
+textarea {
+  font-size: 18px;
+}
+
+
+}
+
+@media screen and (min-width: 1920px) {
+
+  h2 {
+    font-size: 55px;
+  }
+  
+  label, select, input {
+    font-size: 22px;
+  }
+  
+  small {
+    font-size: 18px;
+  }
+  
+  fieldset {
+    width: 60%;
+  }
+  
+  fieldset:first-child {
+    gap: 5rem;
+  }
+  
+  .occasion-btn-div {
+    margin: 0;
+    display: flex;
+  }
+  
+  fieldset:nth-child(2) {
+    width: 60%;
+  }
+  
+  fieldset:nth-child(2) h2 {
+    margin-top: 2rem;
+    display: flex;
+    width: 50%;
+  }
+  
+  fieldset:nth-child(2) .field {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    gap: 1rem;
+  }
+  
+  input {
+    width: 75%;
+    margin-left: auto;
+    padding: 0.2rem 0.4rem;
+  }
+  
+  #textarea {
+    margin: 0;
+  }
+  
+  textarea {
+    font-size: 18px;
+  }
+
+}
