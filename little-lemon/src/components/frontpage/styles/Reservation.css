@@ -39,3 +39,16 @@
 }
 
 }
+
+@media screen and (min-width: 1920px) {
+
+  .res-container {
+    padding: 3rem;
+  }
+
+.res-container h1 {
+  font-size: 85px;
+  padding: 0.5rem 4rem;
+}
+
+}

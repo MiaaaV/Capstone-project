@@ -9,6 +9,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   gap: 1rem;
+  width: 90vw;
 }
 
 .logo-col {
@@ -19,10 +20,7 @@ footer {
 
 .footer-col {
   text-align: start;
-}
-
-.footer-col:nth-of-type(2){
-  width: 90%;
+  width: 100%;
 }
 
 .footer-col h2 {

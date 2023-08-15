@@ -36,7 +36,7 @@ function ValidateForm({ fname, lname, email, phone }) {
   return (
     <>
       <div className='btn-div'>
-        <button type="submit" onClick={Validation}>Book now (validated)</button>
+        <button type="submit" onClick={Validation}>Book now</button>
         <small>Table reservation is free of charge.</small>
       </div>
     </>

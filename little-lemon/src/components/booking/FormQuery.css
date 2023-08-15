@@ -1,125 +1,135 @@
 @media screen and (min-width: 768px) {
 
-h2 {
-  font-size: 35px;
-}
+  fieldset {
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
 
-label, select, input {
-  font-size: 20px;
-}
+  select, label,
+  label[for='fname'],
+  [for='lname'],
+  [for='email'],
+  [for='phone'],
+  [for='notes'] {
+    font-size: 18px;
+  }
 
-small {
-  margin: 0;
+  select {
+    padding: 0.3rem 1rem;
+  }
+
+  .grid-helper {
+    gap: 3rem;
+  }
+
+  .occasion-p {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .datetime-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: flex-start;
+    height: 16vh;
+  }
+
+  label[for="time"] {
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .date {
+    grid-column: 1;
+    display: block;
+  }
+
+  .datetime {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .option-grid {
+    gap: 1rem;
+  }
+
+  .option-button {
+    padding: 0.6rem 1rem;
+    font-size: 16px;
+  }
+
+  label[for='fname'],
+  [for='lname'],
+  [for='email'],
+  [for='phone'],
+  [for='notes']{
   font-size: 18px;
 }
 
-fieldset {
-  width: 90%;
-  margin: 0 auto;
-}
+  input[type="text"],
+  [type="email"],
+  [type="tel"] {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    font-size: 16px;
+  }
 
-fieldset:first-child {
-  gap: 5rem;
-}
+  label[for="notes"] {
+    margin-top: 1rem;
+  }
 
-.occasion-btn-div {
-  margin: 0;
-  display: flex;
-}
+  textarea {
+    font-size: 16px;
+  }
 
-fieldset:nth-child(2) {
-  width: 100%;
-}
-
-fieldset:nth-child(2) h2 {
-  margin-top: 2rem;
-  display: flex;
-  width: 50%;
-}
-
-fieldset:nth-child(2) .field {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.contact-info {
-  gap: 1rem;
-}
-
-input {
-  width: 75%;
-  margin-left: auto;
-  padding: 0.2rem 0.4rem;
-}
-
-#textarea {
-  margin: 0;
-}
-
-textarea {
-  font-size: 18px;
-}
-
+  .btn-div button {
+    padding: 1rem 4rem;
+    font-size: 18px;
+  }
 
 }
 
 @media screen and (min-width: 1920px) {
 
-  h2 {
-    font-size: 55px;
+  select, label,
+  label[for='fname'],
+  [for='lname'],
+  [for='email'],
+  [for='phone'],
+  [for='notes'] {
+    font-size: 20px;
   }
-  
-  label, select, input {
-    font-size: 22px;
+
+  #date {
+    padding: 0.5rem 4rem;
   }
-  
-  small {
-    font-size: 18px;
+
+  fieldset h2 {
+    font-size: 26px;
   }
-  
-  fieldset {
-    width: 60%;
+
+  .vw-helper {
+    width: 60vw;
+    margin-bottom: 1rem;
   }
-  
-  fieldset:first-child {
+
+  .grid-helper {
     gap: 5rem;
   }
-  
-  .occasion-btn-div {
-    margin: 0;
-    display: flex;
+
+  .occasion-p {
+    font-size: 20px;
   }
-  
-  fieldset:nth-child(2) {
-    width: 60%;
+
+  .datetime-div {
+    height: 23vh;
   }
-  
-  fieldset:nth-child(2) h2 {
-    margin-top: 2rem;
-    display: flex;
-    width: 50%;
+
+  .option-button {
+    padding: 0.8rem 1.2rem;
   }
-  
-  fieldset:nth-child(2) .field {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .contact-info {
-    gap: 1rem;
-  }
-  
-  input {
-    width: 75%;
-    margin-left: auto;
-    padding: 0.2rem 0.4rem;
-  }
-  
-  #textarea {
-    margin: 0;
-  }
-  
-  textarea {
+
+  .btn-div button {
+    padding: 1rem 5rem;
     font-size: 18px;
   }
 

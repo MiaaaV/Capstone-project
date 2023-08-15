@@ -9,7 +9,7 @@
   }
 
   .testimonials-grid {
-    width: 90%;
+    width: 90vw;
     gap: 2rem;
   }
 
@@ -62,7 +62,7 @@
   .testimonials-section:before {
     content: " ";
     position: absolute;
-    width: 90%;
+    width: 90vw;
     height: 80%;
     opacity: 0.2;
     filter: brightness(60%);
@@ -86,7 +86,7 @@
 
   .testimonials-grid {
     grid-template-columns: repeat(4, 1fr);
-    max-width: 60%;
+    max-width: 60vw;
     gap: 0;
   }
 

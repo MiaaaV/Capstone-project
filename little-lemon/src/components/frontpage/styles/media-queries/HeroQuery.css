@@ -44,7 +44,7 @@
 @media screen and ((min-width: 1440px) and (max-width: 2560px)) {
 
   .hero-container {
-    width: 60%;
+    width: 60vw;
     align-items: flex-start;
     gap: 10rem;
     padding-top: 1rem;

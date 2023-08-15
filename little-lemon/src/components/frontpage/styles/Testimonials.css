@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(251, 218, 187,0.5);
   padding: 1rem 0 2rem 0;
+  background-color: rgb(251, 218, 187,0.5);
 }
 
 .testimonials-section h1 {
