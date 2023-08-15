@@ -30,7 +30,7 @@ function Home() {
           color: 'black',
         }
       });
-      localStorage.removeItem('toastItem');
+      localStorage.removeItem('confirmToast');
     }
   }, []);
 
