@@ -16,11 +16,9 @@ function Form({ availableTimes, dispatchOnDateChange }) {
   const [selectedTimes, setSelectedTimes] = useState([]);
 
   useEffect(() => {
-    // Set today's date as the default date when the component mounts
     const today = new Date().toISOString().split('T')[0];
     setDate(today);
 
-    // Optionally, dispatch the default date to the parent component
     if (dispatchOnDateChange) {
       dispatchOnDateChange(today);
     }
@@ -51,6 +49,7 @@ function Form({ availableTimes, dispatchOnDateChange }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    localStorage.setItem('confirmToast', 'true');
   }
 
   return (
@@ -235,7 +234,6 @@ function Form({ availableTimes, dispatchOnDateChange }) {
           phone={phone}
           handleSubmit={handleSubmit} />
       </form >
-
     </>
   )
 }

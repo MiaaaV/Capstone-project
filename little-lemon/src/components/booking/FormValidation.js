@@ -29,8 +29,7 @@ function ValidateForm({ fname, lname, email, phone }) {
       return
     }
 
-    alert('Form is valid')
-    window.location.href = "/confirmation"
+    window.location.href = "/"
   }
 
   return (
