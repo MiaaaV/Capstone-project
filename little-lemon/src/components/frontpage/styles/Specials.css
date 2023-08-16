@@ -21,6 +21,10 @@
   padding: 0.8rem 1rem;
 }
 
+.special-container button:hover {
+background-color: #d8b711;
+}
+
 .special-grid {
   display: grid;
   grid-template-columns: repeat(1,2fr);
@@ -93,4 +97,8 @@
   color: black;
   font-family: 'Karla', sans-serif;
   font-size: 14px;
+}
+
+.card-btn:hover {
+  color: #495E57;
 }

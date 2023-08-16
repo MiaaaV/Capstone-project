@@ -1,8 +1,23 @@
 import React from "react";
 
-function ValidateForm({ fname, lname, email, phone }) {
+function ValidateForm({ adultOpt, childOpt, accessOpt, fname, lname, email, phone }) {
 
   function Validation() {
+
+    const adult = parseInt(adultOpt);
+    const child = parseInt(childOpt);
+    const access = parseInt(accessOpt);
+
+    if (adult === 0 && child === 0 && access === 0) {
+      alert("Guest count cannot be empty!");
+      return;
+    }
+
+    if (adult === 0 && child > 0) {
+      alert("Cannot have children without any adults");
+      return;
+    }
+
     if (fname.length === 0 || lname.length === 0) {
       alert(`${fname.length === 0 ? 'First' : 'Last'} name cannot be empty`);
       return;
@@ -24,6 +39,11 @@ function ValidateForm({ fname, lname, email, phone }) {
       return;
     }
 
+    if (!phone) {
+      alert('Phone number can not be empty')
+      return
+    }
+
     if (isNaN(phone)) {
       alert('Please enter a valid phone number')
       return
@@ -35,7 +55,7 @@ function ValidateForm({ fname, lname, email, phone }) {
   return (
     <>
       <div className='btn-div'>
-        <button type="submit" onClick={Validation}>Book now</button>
+        <button type="submit" onClick={Validation}><span>Book now</span></button>
         <small>Table reservation is free of charge.</small>
       </div>
     </>

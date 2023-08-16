@@ -8,17 +8,20 @@ import './styles/media-queries/HeaderQuery.css';
 
 function Header() {
 
-  const [click, setClick] = useState(true);
-  const handleClick = () => setClick(!click);
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => {
+    setClick(!click);
+  };
 
   return (
     <>
-      <header>
+      <header id="top">
         <NavLink to="/">
           <img src={Logo} alt="Little Lemon logo" />
         </NavLink>
 
-        <nav>
+        <nav className='nav-menu'>
           <ul>
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
@@ -32,7 +35,21 @@ function Header() {
         <div className='mobile-nav' onClick={handleClick}>
           {click ? (<FontAwesomeIcon icon={faBars} className='fa-icon' />) : (<FontAwesomeIcon icon={faClose} className='fa-icon' />)}
         </div>
+
       </header>
+
+      <div className={click ? 'nav-menu' : 'nav-menu active'}>
+        <nav>
+          <ul className='mobile-ul'>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/menu">Menu</NavLink></li>
+            <li><NavLink to="/reservations">Reservations</NavLink></li>
+            <li><NavLink to="/orderonline">Order Online</NavLink></li>
+            <li><NavLink to="/login">Login</NavLink></li>
+          </ul>
+        </nav>
+      </div>
     </>
   )
 }

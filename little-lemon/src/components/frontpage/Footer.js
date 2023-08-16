@@ -13,19 +13,19 @@ function Footer() {
 
         <div className='footer'>
           <div className='logo-col'>
-            <NavLink to="/">
+            <a href="#top" onClick={() => window.scrollTo(0, 0)}>
               <img src={Logo} id='footer-logo' alt="Little Lemon logo" />
-            </NavLink>
+            </a>
           </div>
 
           <div className="footer-col">
             <h2>Page navigation</h2>
             <nav>
-              <ul class='footer-ul'>
+              <ul className='footer-ul'>
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><NavLink to="/about">About</NavLink></li>
                 <li><NavLink to="/menu">Menu</NavLink></li>
-                <li><NavLink to="/reservations">Reservations</NavLink></li>
+                <li><NavLink to="/reservations" onClick={() => window.scrollTo(0, 0)}>Reservations</NavLink></li>
                 <li><NavLink to="/orderonline">Order Online</NavLink></li>
                 <li><NavLink to="/login">Login</NavLink></li>
               </ul>

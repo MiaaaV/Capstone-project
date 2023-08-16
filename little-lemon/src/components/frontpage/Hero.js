@@ -15,7 +15,7 @@ function Hero() {
             <h2>Chicago</h2>
 
             <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-            <NavLink to="/reservations"><button>Reserve a Table</button></NavLink>
+            <NavLink to="/reservations"><button><span>Reserve a Table </span></button></NavLink>
           </div>
 
           <div className='hero-right-box'>

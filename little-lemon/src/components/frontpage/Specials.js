@@ -7,7 +7,7 @@ import pasta from '../../images/foods/penne pasta.jpg';
 import './styles/Specials.css';
 import './styles/media-queries/SpecialsQuery.css';
 
-function Main() {
+function Special() {
 
   return (
     <>
@@ -29,7 +29,7 @@ function Main() {
                   <h4><span>$ 12.99</span></h4>
                 </div>
                 <p className="card-text">The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
-                <a href="http://localhost:3000/" className="card-btn">Add to order <span><FontAwesomeIcon icon={faPersonBiking} /></span></a>
+                <a href="/" className="card-btn">Add to order <span><FontAwesomeIcon icon={faPersonBiking} /></span></a>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ function Main() {
                   <h4><span>$ 5.99</span></h4>
                 </div>
                 <p className="card-text">Our delicious Bruschetta is made from grilled local bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
-                <a href="http://localhost:3000/" className="card-btn">Add to order <span><FontAwesomeIcon icon={faPersonBiking} /></span></a>
+                <a href="/" className="card-btn">Add to order <span><FontAwesomeIcon icon={faPersonBiking} /></span></a>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@ function Main() {
                   <h4><span>$ 5.00</span></h4>
                 </div>
                 <p className="card-text">This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p>
-                <a href="http://localhost:3000/" className="card-btn">Add to order <span><FontAwesomeIcon icon={faPersonBiking} /></span></a>
+                <a href="/" className="card-btn">Add to order <span><FontAwesomeIcon icon={faPersonBiking} /></span></a>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ function Main() {
                   <h4><span>$ 14.99</span></h4>
                 </div>
                 <p className="card-text">Mediterranean style prepared penne pasta is our all time favourite for both the young and old. Coated in plenty mozzarella and Parmesan cheese.</p>
-                <a href="http://localhost:3000/" className="card-btn">Add to order <span><FontAwesomeIcon icon={faPersonBiking} /></span></a>
+                <a href="/" className="card-btn">Add to order <span><FontAwesomeIcon icon={faPersonBiking} /></span></a>
               </div>
             </div>
           </div>
@@ -85,4 +85,4 @@ function Main() {
   )
 }
 
-export default Main
+export default Special

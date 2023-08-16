@@ -62,12 +62,13 @@ function Form({ availableTimes, dispatchOnDateChange }) {
               <h2>Guest count</h2>
 
               <div>
-                <label htmlFor="adults">Adults: </label>
-                <select required
+                <label htmlFor="adultOpt">Adults: </label>
+                <select
                   id='adultOpt'
                   name="adult"
                   value={adult}
-                  onChange={e => setAdult(e.target.value)}>
+                  onChange={e => setAdult(e.target.value)}
+                  required>
                   <option value="0">0</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -79,7 +80,7 @@ function Form({ availableTimes, dispatchOnDateChange }) {
               </div>
 
               <div>
-                <label htmlFor="children">Children: </label>
+                <label htmlFor="childOpt">Children: </label>
                 <select id='childOpt'
                   name="child"
                   value={child}
@@ -94,7 +95,7 @@ function Form({ availableTimes, dispatchOnDateChange }) {
               </div>
 
               <div>
-                <label htmlFor="access">Access: </label>
+                <label htmlFor="accessOpt">Access: </label>
                 <select id='accessOpt'
                   name="access"
                   value={access}
@@ -228,6 +229,9 @@ function Form({ availableTimes, dispatchOnDateChange }) {
         </fieldset>
 
         <ValidateForm
+          adultOpt={adult}
+          childOpt={child}
+          accessOpt={access}
           fname={fname}
           lname={lname}
           email={email}
