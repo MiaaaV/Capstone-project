@@ -13,7 +13,7 @@ function Form({ availableTimes, dispatchOnDateChange }) {
   const [date, setDate] = useState("")
 
   const [time, setTime] = useState("")
-  const [selectedTimes, setSelectedTimes] = useState([]);
+  const [selectedTime, setSelectedTime] = useState("");
 
   useEffect(() => {
     const today = new Date().toISOString().split('T')[0];
@@ -26,18 +26,21 @@ function Form({ availableTimes, dispatchOnDateChange }) {
 
   const handleDateChange = (newDate) => {
     setDate(newDate);
+    setTime("") //reset time
+    toggleTime("") //reset toggle
 
     if (dispatchOnDateChange) {
       dispatchOnDateChange(newDate);
     }
   };
 
-  // allows only one button to be pressed at a time
+  // ensures only one button can be clicked at once
   const toggleTime = (time) => {
-    if (selectedTimes.includes(time)) {
-      setSelectedTimes(selectedTimes.filter((item) => item !== time));
+    if (selectedTime === time) {
+      setSelectedTime("");
+      setTime("");
     } else {
-      setSelectedTimes([time]);
+      setSelectedTime(time);
     }
   };
 
@@ -115,7 +118,6 @@ function Form({ availableTimes, dispatchOnDateChange }) {
 
               <p className='occasion-p'>Let us know about your special occasion!</p>
               <div className='occasion'>
-                {/*<FontAwesomeIcon icon={faChampagneGlasses} />*/}
                 <select name="occasion"
                   placeholder='none'
                   value={occasion}
@@ -145,23 +147,27 @@ function Form({ availableTimes, dispatchOnDateChange }) {
             <div className='datetime'>
               {date && (
                 <>
-                  <label htmlFor='time'>Available times for&nbsp;
+                  <strong>Available times for&nbsp;
                     <output>
                       {new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                     </output>
-                  </label>
+                  </strong>
+
                   <div className='option-grid'
                     id='time'
-                    name='time'
-                    value={time}
-                    onChange={e => setTime((e.target.value))}>
+                    name='time'>
                     {availableTimes.map((time) => (
                       <div
                         key={time}
                         id={`available-time-button-${time.replace(":", "")}`}
                         type="button"
-                        className={`option-button ${selectedTimes.includes(time) ? 'selected' : ''}`}
-                        onClick={() => toggleTime(time)}>
+                        className={`option-button ${selectedTime === time ? 'selected' : ''}`}
+                        onClick={() => {
+                          toggleTime(time)
+                          if (selectedTime !== time) {
+                            setTime(time)
+                          }
+                        }}>
                         {time}
                       </div>
                     ))}
@@ -180,35 +186,40 @@ function Form({ availableTimes, dispatchOnDateChange }) {
 
               <div className='contact-info'>
                 <div className='details'>
-                  <label htmlFor="fname">First name</label>
-                  <input id='fname' type='text'
+                  <label htmlFor="fname">First name<span style={{ color: 'red' }}>*</span></label>
+                  <input id='fname'
+                    type='text'
                     placeholder='Jason'
                     value={fname} onChange={e => setFname(e.target.value)}
                     required />
                 </div>
 
                 <div className='details'>
-                  <label htmlFor="lname">Last name</label>
-                  <input id='lname' type='text'
+                  <label htmlFor="lname">Last name<span style={{ color: 'red' }}>*</span></label>
+                  <input id='lname'
+                    type='text'
                     placeholder='Derulo'
                     value={lname} onChange={e => setLname(e.target.value)}
                     required />
                 </div>
 
                 <div className='details'>
-                  <label htmlFor="email">Email</label>
-                  <input id='email' type='email'
+                  <label htmlFor="email">Email<span style={{ color: 'red' }}>*</span></label>
+                  <input id='email'
+                    type='email'
                     placeholder='jason.derulo@gmail.com'
                     value={email} onChange={e => setEmail(e.target.value)}
+                    autoComplete='on'
                     required />
                 </div>
 
                 <div className='details'>
-                  <label htmlFor="phone">Phone</label>
+                  <label htmlFor="phone">Phone<span style={{ color: 'red' }}>*</span></label>
                   <input id='phone'
                     type='tel'
                     placeholder='+123 45 678 9101'
                     value={phone} onChange={e => setPhone(e.target.value)}
+                    autoComplete='on'
                     required />
                 </div>
               </div>
@@ -232,6 +243,8 @@ function Form({ availableTimes, dispatchOnDateChange }) {
           adultOpt={adult}
           childOpt={child}
           accessOpt={access}
+          date={date}
+          selectedTime={time}
           fname={fname}
           lname={lname}
           email={email}
