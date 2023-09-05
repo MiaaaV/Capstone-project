@@ -1,4 +1,4 @@
-import Form from '../booking/Form';
+import BookingForm from '../booking/BookingForm';
 import { fetchAPI } from '../booking/API';
 import './styles/Reservation.css';
 import React, { useReducer } from "react";
@@ -29,7 +29,7 @@ function ReservationsPage() {
           <h1>Table reservation</h1>
         </div>
 
-        <Form
+        <BookingForm
           availableTimes={availableTimes}
           dispatchOnDateChange={dispatchOnDateChange} />
       </section>

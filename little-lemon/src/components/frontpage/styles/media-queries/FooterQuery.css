@@ -29,6 +29,11 @@
 
 @media screen and (min-width: 1920px) {
 
+  #footer-time {
+    display: inline-block !important;
+  }
+
+
   .footer {
     width: 70vw;
   }

@@ -1,5 +1,6 @@
 {
-  "name": "little-lemon",
+  "name": "littlelemon",
+  "homepage": "https://miav-portfolio.eu/LittleLemon",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -44,7 +44,7 @@ function Footer() {
           <div className="footer-col">
             <h2>Opening times</h2>
             <ul className='footer-ul'>
-              <li>Mon-Sun: 17:00 - 01:00</li>
+              <li>Mon-Sun: <span id='footer-time'>17:00 - 01:00</span></li>
             </ul>
           </div>
 
